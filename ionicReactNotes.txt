@@ -1,0 +1,29 @@
+Ionic with React
+================
+Friday April 26 2024
+
+Toby Dussek - Framework Training
+
+- Welcome
+- Setup check
+- build app: familiar stuff and new stuff
+- Recognize the React parts
+  - familiar and novel uses of React
+  - wrapped React features
+- working without a DOM
+- Capacitor plug-ins
+- resources (and limitations)
+- Adding and managing device support
+- devices, emulators (and PWA)
+- web live update
+- development on device with live update: what's actually happening
+- performance: lists need index
+- Deployment: Android and iOS via Android Studio and XCode
+- Theming, animations and transitions
+- assets required for deployment
+- pilot/proof of concept
+  - architecture/ components/ services
+  - build out sample code
+  - reassurance as to how to build 
+
+- end of course feedback
