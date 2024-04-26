@@ -17,19 +17,25 @@ https://github.com/onionmccabbage/ionicMay2024
   > web live update: ionic capacitor run android -l --external 
   > development on device with live update: what's actually happening
 > Recognize the React parts
-  - familiar and novel uses of React
+  > familiar and novel uses of React
   > ionic wrapped React features
   > take a look at any pure Ionic components (not wrapping React ones)
-  - Ionic components
+  > JSX
+  > Ionic components
   -q - web based also ios/android: server-side/client side
+- Other recommended apps
+  - https://github.com/ionic-team/tutorial-photo-gallery-react (simple architecture. using CAmera and storage)
+  - https://ionicreacthub.com/ionic-react-login (beware - needs fixing!!)
+  - https://github.com/orgs/ionic-team/repositories (LOADS of really good repos)
 > working without a DOM (and with a web app server)
-- Ionic templates and routing
-- Capacitor plug-ins 
-- Familiarity with documentation: Ionic and React resources (and limitations)
-- VSC plugins and browser debug tools
-- install sample apps and get them working
-- Adding and managing device support: devices, emulators (and PWA)
-- performance: lists need index, minimum repaints
+> Ionic templates and routing
+> Capacitor plug-ins 
+  - https://github.com/ionic-team/capacitor-testapp
+> Familiarity with documentation: Ionic and React resources (and limitations)
+> VSC plugins and browser debug tools
+> install sample apps and get them working
+> Adding and managing device support: devices, emulators (and PWA)
+> performance: lists need index, minimum repaints
 - lifeCycle
 - Deployment: Android and iOS via Android Studio and XCode
   - assets required for deployment

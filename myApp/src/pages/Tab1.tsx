@@ -1,4 +1,4 @@
-import { IonAvatar, IonButtons, IonContent, IonHeader, IonItem, IonLabel, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonAvatar, IonButtons, IonChip, IonContent, IonHeader, IonItem, IonLabel, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import { allUsers } from '../static/userData';
@@ -11,7 +11,8 @@ const Tab1: React.FC = () => {
     setUsers([...users, e])
   }
   return (
-    <IonPage>
+    // this LOOKS like HTML but it is not - it is JSX
+    <IonPage className='someCSS_class'>
       <IonHeader>
         <IonToolbar>
           <IonTitle>Users Tab</IonTitle>
@@ -27,11 +28,13 @@ const Tab1: React.FC = () => {
           {/* in React always provide an index when iterating */}
           {users.map((user, index) => { //index=user.id
             return <IonItem key={index}>
-              <IonLabel >{user.first_name} {user.last_name}</IonLabel>
-              <IonAvatar>
-                <img src={user.avatar} alt={user.first_name} />
-              </IonAvatar>
-              <IonLabel>{user.email}</IonLabel>
+              <IonChip>
+                <IonLabel >{user.first_name} {user.last_name}</IonLabel>
+                <IonAvatar>
+                  <img src={user.avatar} alt={user.first_name} />
+                </IonAvatar>
+                <IonLabel>{user.email}</IonLabel>
+              </IonChip>
             </IonItem>
           })}
         </IonList>
