@@ -4,6 +4,9 @@ Friday April 26 2024
 
 Toby Dussek - Framework Training
 
+course repo
+https://github.com/onionmccabbage/ionicMay2024
+
 - Welcome
 - Setup check
   - common pitfalls and solutions
