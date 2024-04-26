@@ -13,16 +13,16 @@ https://github.com/onionmccabbage/ionicMay2024
 > Setup check
   - common pitfalls and solutions (ANDROID_HOME, JAVA_HOME)
   - towards an automated CI/CD tool-chain
-- build and run app: familiar stuff and new stuff
+> build and run app: familiar stuff and new stuff
   > web live update: ionic capacitor run android -l --external 
   > development on device with live update: what's actually happening
-- Recognize the React parts
+> Recognize the React parts
   - familiar and novel uses of React
-  - wrapped React features
-  > take a look at any pure Ionic compoinents (not wrapping React ones)
+  > ionic wrapped React features
+  > take a look at any pure Ionic components (not wrapping React ones)
   - Ionic components
   -q - web based also ios/android: server-side/client side
-- working without a DOM (and with a web app server)
+> working without a DOM (and with a web app server)
 - Ionic templates and routing
 - Capacitor plug-ins 
 - Familiarity with documentation: Ionic and React resources (and limitations)
