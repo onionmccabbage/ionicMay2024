@@ -1,4 +1,4 @@
-import { IonButton, IonContent, IonHeader, IonPage, IonSelect, IonText, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonPage, IonSelect, IonSelectOption, IonSkeletonText, IonText, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab2.css';
 import { useState } from 'react';
@@ -19,7 +19,7 @@ const Tab2: React.FC = () => {
     try {
       const response = await fetch(`${apiStruc.baseUrl}/${apiStruc.category}/${apiStruc.id}`, 
       {method:'get'})
-      const responseJSON = await response.json()
+      const responseJSON = await response.json() // coinverts JSON text to a JS object stucture
       setResponse(JSON.stringify(responseJSON)) // this will populate our state
     } catch (err:any){
       setResponse(err.message)
@@ -38,12 +38,21 @@ const Tab2: React.FC = () => {
             <IonTitle size="large">Tab 2</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonSelect>
+        <IonSelect
+          placeholder='Select Category'
+          onIonChange={ e =>updateCategory(e.detail.value ?? '')}
+          value={apiStruc.category}>
           {/* here the user may choose a category */}
+          <IonSelectOption value='users'>Users</IonSelectOption>
+          <IonSelectOption value='todos'>Todos</IonSelectOption>
+          <IonSelectOption value='photos'>Photos</IonSelectOption>
+          <IonSelectOption value='posts'>Posts</IonSelectOption>
+          <IonSelectOption value='albums'>Albums</IonSelectOption>
         </IonSelect>
-        <IonButton>Send Request</IonButton>
+        <IonButton expand='block' onClick={()=>sendRequest()}>Send Request</IonButton>
         <IonText>
           {/* render any loaded data here */}
+          <pre>{response}</pre>
         </IonText>
       </IonContent>
     </IonPage>
