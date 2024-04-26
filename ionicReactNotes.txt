@@ -4,13 +4,15 @@ Friday April 26 2024
 
 Toby Dussek - Framework Training
 
+11:00, 12:30, 3:00, 4:30
+
 course repo
 https://github.com/onionmccabbage/ionicMay2024
 
 - Welcome
 - Setup check
-  - common pitfalls and solutions
-  - towards automated CI/CD toolchain
+  - common pitfalls and solutions (ANDROID_HOME, JAVA_HOME)
+  - towards an automated CI/CD tool-chain
 - build and run app: familiar stuff and new stuff
   - web live update
   - development on device with live update: what's actually happening
