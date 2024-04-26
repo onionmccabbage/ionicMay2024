@@ -31,6 +31,7 @@ const Tab1: React.FC = () => {
               <IonAvatar>
                 <img src={user.avatar} alt={user.first_name} />
               </IonAvatar>
+              <IonLabel>{user.email}</IonLabel>
             </IonItem>
           })}
         </IonList>

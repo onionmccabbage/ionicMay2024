@@ -1,8 +1,30 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonPage, IonSelect, IonText, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab2.css';
+import { useState } from 'react';
+import { Method } from 'ionicons/dist/types/stencil-public-runtime';
 
+const baseUrl = 'https://jsonplaceholder.typicode.com'
 const Tab2: React.FC = () => {
+  const [apiStruc, setApiStruc] = useState({
+    'baseUrl':baseUrl,
+    'category':'photos',
+    'id':1
+  })
+  const updateCategory = (e:any)=>{
+    setApiStruc({...apiStruc, 'category':e})
+  }
+  const [response, setResponse] = useState('') // here we begin with an empty state
+  const sendRequest = async ()=>{
+    try {
+      const response = await fetch(`${apiStruc.baseUrl}/${apiStruc.category}/${apiStruc.id}`, 
+      {method:'get'})
+      const responseJSON = await response.json()
+      setResponse(JSON.stringify(responseJSON)) // this will populate our state
+    } catch (err:any){
+      setResponse(err.message)
+    } finally {}
+  }
   return (
     <IonPage>
       <IonHeader>
@@ -16,7 +38,13 @@ const Tab2: React.FC = () => {
             <IonTitle size="large">Tab 2</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <h1>Live Auto Reload</h1>
+        <IonSelect>
+          {/* here the user may choose a category */}
+        </IonSelect>
+        <IonButton>Send Request</IonButton>
+        <IonText>
+          {/* render any loaded data here */}
+        </IonText>
       </IonContent>
     </IonPage>
   );

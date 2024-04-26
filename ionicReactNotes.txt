@@ -19,8 +19,9 @@ https://github.com/onionmccabbage/ionicMay2024
 - Recognize the React parts
   - familiar and novel uses of React
   - wrapped React features
-  q - take a look at any pure Ionic compoinents (not wrapping React ones)
+  > take a look at any pure Ionic compoinents (not wrapping React ones)
   - Ionic components
+  -q - web based also ios/android: server-side/client side
 - working without a DOM (and with a web app server)
 - Ionic templates and routing
 - Capacitor plug-ins 
@@ -35,11 +36,15 @@ https://github.com/onionmccabbage/ionicMay2024
   - splash-screens (9-patch)
   - digital signing for app-stores
   - myapp.com (app association)
+    - but we avoid server-side rendering for apps! (no SPA, no SEO...)
   - trusted certificate
 - Theming, animations and transitions
 - pilot/proof of concept
   - architecture/ components/ services
   - build out sample code
   - reassurance as to how to build 
+  q - report back to business about Ionic/React...
+    - Ionic and Capacitor have solid use popularity
+    - 
 
 - end of course feedback
