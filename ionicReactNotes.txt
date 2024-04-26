@@ -45,7 +45,7 @@ https://github.com/onionmccabbage/ionicMay2024
     - but we avoid server-side rendering for apps! (no SPA, no SEO...)
   - trusted certificate
 - Theming, animations and transitions
-- pilot/proof of concept
+> pilot/proof of concept
   - architecture/ components/ services
   - build out sample code
   - reassurance as to how to build 

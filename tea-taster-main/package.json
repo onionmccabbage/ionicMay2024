@@ -9,7 +9,7 @@
     "build": "react-scripts build && cap copy",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules\\(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)\\)\"",
     "eject": "react-scripts eject",
-    "prepare": "husky install",
+    "prepare": "husky",
     "husky": "node ./node_modules/husky/lib/bin.js",
     "test:ci": "export CI=true; npm run test",
     "test:cov": "export CI=true; npm run test -- --coverage",
