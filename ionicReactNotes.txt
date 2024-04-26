@@ -9,16 +9,17 @@ Toby Dussek - Framework Training
 course repo
 https://github.com/onionmccabbage/ionicMay2024
 
-- Welcome
-- Setup check
+> Welcome
+> Setup check
   - common pitfalls and solutions (ANDROID_HOME, JAVA_HOME)
   - towards an automated CI/CD tool-chain
 - build and run app: familiar stuff and new stuff
-  - web live update
-  - development on device with live update: what's actually happening
+  > web live update: ionic capacitor run android -l --external 
+  > development on device with live update: what's actually happening
 - Recognize the React parts
   - familiar and novel uses of React
   - wrapped React features
+  q - take a look at any pure Ionic compoinents (not wrapping React ones)
   - Ionic components
 - working without a DOM (and with a web app server)
 - Ionic templates and routing
