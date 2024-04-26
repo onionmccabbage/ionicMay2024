@@ -6,21 +6,31 @@ Toby Dussek - Framework Training
 
 - Welcome
 - Setup check
-- build app: familiar stuff and new stuff
+  - common pitfalls and solutions
+  - towards automated CI/CD toolchain
+- build and run app: familiar stuff and new stuff
+  - web live update
+  - development on device with live update: what's actually happening
 - Recognize the React parts
   - familiar and novel uses of React
   - wrapped React features
-- working without a DOM
-- Capacitor plug-ins
-- resources (and limitations)
-- Adding and managing device support
-- devices, emulators (and PWA)
-- web live update
-- development on device with live update: what's actually happening
-- performance: lists need index
+  - Ionic components
+- working without a DOM (and with a web app server)
+- Ionic templates and routing
+- Capacitor plug-ins 
+- Familiarity with documentation: Ionic and React resources (and limitations)
+- VSC plugins and browser debug tools
+- install sample apps and get them working
+- Adding and managing device support: devices, emulators (and PWA)
+- performance: lists need index, minimum repaints
+- lifeCycle
 - Deployment: Android and iOS via Android Studio and XCode
+  - assets required for deployment
+  - splash-screens (9-patch)
+  - digital signing for app-stores
+  - myapp.com (app association)
+  - trusted certificate
 - Theming, animations and transitions
-- assets required for deployment
 - pilot/proof of concept
   - architecture/ components/ services
   - build out sample code
